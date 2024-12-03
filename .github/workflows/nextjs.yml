@@ -36,6 +36,8 @@ jobs:
         run: |
           cd portfolio
           npm run build
+        env:
+          NEXT_PUBLIC_GITHUB_ACTIONS: true # Add this line
       - name: Static HTML export with Next.js
         run: |
           cd portfolio
